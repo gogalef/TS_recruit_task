@@ -152,6 +152,7 @@
       <path value="$PROJECT_DIR$/vendor/filament/widgets" />
       <path value="$PROJECT_DIR$/vendor/blade-ui-kit/blade-icons" />
       <path value="$PROJECT_DIR$/vendor/blade-ui-kit/blade-heroicons" />
+      <path value="$PROJECT_DIR$/vendor/mohamedsabil83/filament-forms-tinyeditor" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />

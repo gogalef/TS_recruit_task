@@ -14,17 +14,4 @@ class ArticleController extends Controller
     {
         return 'view';
     }
-    public function add()
-    {
-        return 'add';
-    }
-    public function edit($id)
-    {
-        return 'edit';
-    }
-
-    public function delete($id)
-    {
-        return 'delete';
-    }
 }
