@@ -1,30 +1,30 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\ArticleController;
 
 Route::get('/',
-    [ArticlesController::class, 'list']
+    [ArticleController::class, 'list']
 )->name('articles.list');
 
 Route::get('/list',
-    [ArticlesController::class, 'list']
+    [ArticleController::class, 'list']
 )->name('articles.list');
 
 Route::get('/view/{id}',
-    [ArticlesController::class, 'view']
+    [ArticleController::class, 'view']
 )->name('articles.view');
 
 Route::get('/add',
-    [ArticlesController::class, 'add']
+    [ArticleController::class, 'add']
 )->name('articles.add');
 
 Route::get('/edit/{id}',
-    [ArticlesController::class, 'edit']
+    [ArticleController::class, 'edit']
 )->name('articles.edit');
 
 Route::get('/delete/{id}',
-    [ArticlesController::class, 'delete']
+    [ArticleController::class, 'delete']
 )->name('articles.delete');
 
 Route::get('/test', function () {
