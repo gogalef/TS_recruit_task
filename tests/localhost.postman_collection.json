@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "3264a453-4ea0-46e1-a7f4-d903ad275ae7",
+		"name": "localhost",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6584446"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3883/api/login?email=admin@gmail.com&password=admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3883/api/login?email=admin@gmail.com&password=admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3883",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "admin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3883/api/list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3883/api/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3883",
+					"path": [
+						"api",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3883/api/add?title=My New Article&body=This is the content of the article",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "KPVN0m1FQXvXTWFYGfR7J0Q5kKDyUIBQVef6YFKd1336ae0b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3883/api/add?title=My New Article&body=This is the content of the article",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3883",
+					"path": [
+						"api",
+						"add"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "My New Article"
+						},
+						{
+							"key": "body",
+							"value": "This is the content of the article"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3883/api/view/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3883/api/view/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3883",
+					"path": [
+						"api",
+						"view",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3883/api/edit/3?title=My New Article&body=This is the content of the article",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "KPVN0m1FQXvXTWFYGfR7J0Q5kKDyUIBQVef6YFKd1336ae0b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3883/api/edit/3?title=My New Article&body=This is the content of the article222",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3883",
+					"path": [
+						"api",
+						"edit",
+						"3"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "My New Article"
+						},
+						{
+							"key": "body",
+							"value": "This is the content of the article222"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3883/api/delete/6",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "KPVN0m1FQXvXTWFYGfR7J0Q5kKDyUIBQVef6YFKd1336ae0b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3883/api/delete/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3883",
+					"path": [
+						"api",
+						"delete",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
