@@ -61,7 +61,6 @@ This project is designed to demonstrate the use of Laravel's MVC structure, Eloq
 ### Bonus Features
 
 - Implemented pagination for the article list.
-- Added search functionality to find articles by title or content.
 
 ## Installation and Setup
 
