@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\API\ArticleController as ApiArticleController;
+use App\Http\Controllers\API\AuthController;
 
 Route::get('/',
     [ArticleController::class, 'list']
@@ -14,6 +16,5 @@ Route::get('/list',
 Route::get('/view/{id}',
     [ArticleController::class, 'view']
 )->name('view');
-
 
 
