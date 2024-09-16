@@ -1,20 +1,21 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\API\ArticleController as ApiArticleController;
+use App\Http\Controllers\API\ArticleController;
 use App\Http\Controllers\API\AuthController;
 
 
+Route::post('login', [AuthController::class, 'login']);
+Route::post('logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
 
-
-Route::post('api/login', [AuthController::class, 'login']);
-Route::post('api/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
+Route::get('list', [ArticleController::class, 'list']);
+Route::get('view/{id}', [ArticleController::class, 'view']);
 
 Route::middleware('auth:sanctum')->group(function () {
-    Route::get('api/list', [ApiArticleController::class, 'list']);
-    Route::post('api/add', [ApiArticleController::class, 'add']);
-    Route::get('api/view/{id}', [ApiArticleController::class, 'view']);
-    Route::post('api/edit/{id}', [ApiArticleController::class, 'edit']);
-    Route::get('api/delete/resources/{id}', [ApiArticleController::class, 'delete']);
+//    Route::get('list', [ArticleController::class, 'list']);
+    Route::post('add', [ArticleController::class, 'add']);
+  //  Route::get('view/{id}', [ArticleController::class, 'view']);
+    Route::post('edit/{id}', [ArticleController::class, 'edit']);
+    Route::get('delete/{id}', [ArticleController::class, 'delete']);
 });
 
