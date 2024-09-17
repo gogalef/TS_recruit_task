@@ -104,6 +104,22 @@ Follow these steps to set up and run the project locally:
    ```bash
    php artisan test
    ```
+## Routes
+
+/ - public user interface
+
+**api**
+
+api/login
+api/logout
+api/list
+api/view/{id}
+api/add
+api/edit/{id}
+api/delete/{id}
+
+/admin/login -login to safe user interface
+
 
 ## Assumptions and Additional Features
 
